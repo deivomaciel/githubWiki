@@ -1,0 +1,71 @@
+.App {
+    position: relative;
+}
+
+.repo-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.repo-content {
+    max-width: 100%;
+    margin-top: 40px;
+    position: relative;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.repo {
+    width: 300px;
+    height: 300px;
+    flex: none;
+    background: rebeccapurple;
+}
+
+@media (max-width: 1254px) {
+    .repo-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 962px) {
+    .repo {
+        transform: scale(.8);
+    }
+}
+
+@media (max-width: 957px) {
+    .repo-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .repo {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 647px) {
+    .repo {
+        width: 250px;
+    }
+}
+
+@media (max-width: 547px) {
+    .repo-content {
+        grid-template-columns: 1fr;
+    }
+
+    .repo {
+        width: 400px;
+    }
+}
+
+@media (max-width: 455px) {
+    .repo {
+        width: 340px;
+    }
+}
